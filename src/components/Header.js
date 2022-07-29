@@ -2,7 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>GET THE NEWS</div>
+    <div>
+      <h1>GET THE NEWS</h1>
+    </div>
   )
 }
 
