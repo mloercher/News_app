@@ -9,7 +9,7 @@ function Feed() {
 
   useEffect(() => {
     const getArticles = async () => {
-      const response = await axios.get(`https://newsapi.org/v2/everything?q=football&apiKey=${api_key}`)
+      const response = await axios.get(`https://newsapi.org/v2/everything?q=football&apiKey=${api_key}`).catch((error) => console.log(error))
       console.log(response)
       setArticles(response.data.articles)
     }
